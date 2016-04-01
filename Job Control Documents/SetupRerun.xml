@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<job name="PrescienceRx v1.3"  model="${workflow:modelname}" customer="${workflow:customernumber}">
+	<group name="hivetablesstep1">
+		<step name="aligncaretables" queue="dev-hivequery" item="CreateAlignCare.hql"/>
+		<step name="medispantables" queue="dev-hivequery" item="CreateMedispan.hql"/>
+		<step name="acgtables" queue="dev-hivequery" item="CreateACG.hql"/>
+		<step name="systemtables" queue="dev-hivequery" item="CreateSystemTables.hql"/>
+		<step name="mapreducetables" queue="dev-hivequery" item="CreateMapReduceTables.hql"/>
+		<step name="conditionstable" queue="dev-hivequery" item="ConditionsTable.hql"/>
+	</group>
+</job>

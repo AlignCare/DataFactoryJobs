@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<job name="PrescienceRx v3.7" model="${workflow:modelname}" customer="${workflow:customernumber}">
+	<group name="TestStep">
+		<step name="InsertPrescienceRxBeneficiaries" queue="dataextract" item="beneficiarytable" informat="tab"/>
+	</group>
+</job>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<job name="PrescienceRx v3.7" model="${workflow:modelname}" customer="${workflow:customernumber}">
+	<group name="Step1">
+		<step name="acg" queue="acg" item="Temp"/>
+		<step name="predominantprescriberpart1" queue="mapreduce" item="predominantprescriberpart1"/>
+		<step name="predominantprescriberpart2" queue="mapreduce" item="predominantprescriberpart2"/>
+		<step name="predominantprescriberpart3" queue="mapreduce" item="predominantprescriberpart3"/>
+		<step name="beneficiaryscript" queue="hivequery" item="BeneficiaryScriptTable.hql"/>
+	</group>
+	<group name="Step2">
+		<step name="metricstable" queue="hivequery" item="ModelMetrics.hql"/>
+		<step name="beneficiarytable" queue="hivequery" item="BeneficiaryTable.hql"/>
+		<step name="patientconditiontable" queue="hivequery" item="PatientConditionTable.hql"/>
+		<step name="patientdrilldowntable" queue="hivequery" item="PatientDrilldownTable.hql"/>
+	</group>
+	<group name="Step3">
+		<step name="actionalertjob" queue="mapreduce" item="actionalertjob"/>
+	</group>
+	<group name="Step4">
+		<step name="actionalert" queue="hivequery" item="ActionAlertTable.hql"/>
+		<step name="drilldownstep1" queue="mapreduce" item="drilldownstep1"/>
+		<step name="drilldownstep2" queue="mapreduce" item="drilldownstep2"/>
+		<step name="drilldownstep3" queue="mapreduce" item="drilldownstep3"/>
+	</group>
+	<group name="Step5">
+		<step name="beneficiaryscript" queue="hivequery" item="BeneficiaryScriptTable.hql"/>
+		<step name="actionalert" queue="hivequery" item="ActionAlertTable.hql"/>
+		<step name="createsummary" queue="hivequery" item="CreateSummaryTable.hql"/>
+	</group>
+</job>

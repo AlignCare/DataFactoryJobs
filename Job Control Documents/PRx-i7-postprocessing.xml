@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<job name="PrescienceRx v3.7" model="${workflow:modelname}" customer="${workflow:customernumber}">
+	<group name="hivetablesstep3">
+		<step name="drugtable" queue="dataextract" item="presciencerxdrugs" informat="tab"/>
+		<step name="TruncateStagingTables" queue="sql" item="TSQL"/>
+	</group>
+	<group name="exportSQL">
+		<step name="InsertModelTable" queue="dataextract" item="modelTable" informat="tab"/>
+		<step name="InsertPrescienceRxProviders" queue="dataextract" item="providerTable" informat="tab"/>
+		<step name="InsertCalculatedMetrics_new" queue="dataextract" item="summarytable" informat="tab"/>
+		<step name="InsertPrescienceRxBeneficiaries" queue="dataextract" item="beneficiarytable" informat="tab"/>
+		<step name="InsertPatientActionAlertTable" queue="dataextract" item="ActionAlertTable" informat="tab"/>
+		<step name="InsertPatientConditionTable" queue="dataextract" item="patientconditiontable" informat="tab"/>
+		<step name="InsertBeneficiaryScriptTable" queue="dataextract" item="beneficiaryscripttable" informat="tab"/>
+	</group>
+</job>

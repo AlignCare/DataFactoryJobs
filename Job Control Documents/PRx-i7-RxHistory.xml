@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<job name="PrescienceRx v3.7" model="${workflow:modelname}" customer="${workflow:customernumber}">
+	<group name="azuretables">
+		<step name="rxtable" queue="table2hdinsight" item="rxtable"/>
+	</group>
+	<group name="exportfiles">
+		<step name="RxAll.tab" queue="dataextract" item="rxTable"/>
+	</group>
+</job>

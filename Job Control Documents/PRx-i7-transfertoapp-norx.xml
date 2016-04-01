@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<job name="PrescienceRx v3.7" model="${workflow:modelname}" customer="${workflow:customernumber}">
+	<group name="Truncate">
+		<step name="TruncateAppDBTables" queue="sql" item="TSQL" dbname="${workflow:dbname}"/>
+	</group>
+	<group name="members">
+		<step name="TableBasedLoad_to${workflow:ssispackage}" queue="sql" item="SSIS"/>
+	</group>
+	<group name="drugs">
+		<step name="DrugFileLoad_to${workflow:ssispackage}" queue="sql" item="SSIS"/>
+	</group>
+</job>
