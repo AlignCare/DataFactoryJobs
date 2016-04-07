@@ -1,0 +1,10 @@
+{
+	"name":"testjob.xml",
+	"container":"upmc-commercial-i8-2016-01",
+	"previousContainer":"NA",
+	"modelName": "UPMC Commercial Jan 2016",
+	"ssisPackage": "NA",
+	"customerNumber": "03",
+	"acgFolder": "NA",
+	"dbName": "NA"
+}

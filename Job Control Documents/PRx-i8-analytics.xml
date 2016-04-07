@@ -3,10 +3,10 @@
 	<group name="Step1">
 		<step name="acg" queue="acg" item="Temp"/>
 		<step name="PredominantPrescriberTable" queue="hivequery" item="PredominantPrescriberTable.hql"/>
-		<step name="beneficiaryscript" queue="hivequery" item="BeneficiaryScriptTable.hql"/>
 	</group>
 	<group name="Step2">
-		<step name="metricstable" queue="hivequery" item="ModelMetrics.hql"/>
+    <step name="beneficiaryscript" queue="hivequery" item="BeneficiaryScriptTable.hql"/>
+    <step name="metricstable" queue="hivequery" item="ModelMetrics.hql"/>
 		<step name="beneficiarytable" queue="hivequery" item="BeneficiaryTable.hql"/>
 		<step name="patientconditiontable" queue="hivequery" item="PatientConditionTable.hql"/>
 		<step name="actionalert" queue="hivequery" item="ActionAlertTable.hql"/>

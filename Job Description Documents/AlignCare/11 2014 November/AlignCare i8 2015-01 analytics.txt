@@ -1,0 +1,10 @@
+{
+	"name":"PRx-i8-analytics.xml",
+	"container":"hdinsight-aligncare-i8-2014-11",
+	"previousContainer":"hdinsight-aligncare-i8-2014-10",
+	"modelName": "AlignCare Nov 2014",
+	"ssisPackage": "NA",
+	"customerNumber": "01",
+	"acgFolder": "temp",
+	"dbName": "NA"
+}

@@ -1,0 +1,8 @@
+{
+	"name":"testjob.xml",
+	"container":"upmc-commercial-i7-2015-09",
+	"previousContainer":"upmc-commercial-i7-2015-08",
+	"modelName": "UPMC Commercial Sep 2015",
+	"ssisPackage": "ignore",
+	"customerNumber": "03"
+}

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <job name="PrescienceRx v3.7" model="${workflow:modelname}" customer="${workflow:customernumber}">
 	<group name="TestStep">
-		<step name="InsertPrescienceRxBeneficiaries" queue="dataextract" item="beneficiarytable" informat="tab"/>
-	</group>
+    <group name="Step1">
+      <step name="acg" queue="acg" item="Temp"/>
+      <step name="predominantprescriberpart1" queue="mapreduce" item="predominantprescriberpart1"/>
+      <step name="predominantprescriberpart2" queue="mapreduce" item="predominantprescriberpart2"/>
+      <step name="predominantprescriberpart3" queue="mapreduce" item="predominantprescriberpart3"/>
+      <step name="beneficiaryscript" queue="hivequery" item="BeneficiaryScriptTable.hql"/>
+    </group>
+  </group>
 </job>

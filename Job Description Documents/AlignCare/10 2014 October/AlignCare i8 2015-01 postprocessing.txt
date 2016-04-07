@@ -1,0 +1,10 @@
+{
+	"name":"PRx-i7-postprocessing.xml",
+	"container":"hdinsight-aligncare-i8-2014-10",
+	"previousContainer":"NA",
+	"modelName": "NA",
+	"ssisPackage": "_Dev",
+	"customerNumber": "01",
+	"acgFolder": "NA",
+	"dbName": "PrescienceRx_Staging_Dev"
+}

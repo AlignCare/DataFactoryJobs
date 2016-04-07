@@ -1,0 +1,8 @@
+{
+	"name":"PRx-i7-preprocessing.xml",
+	"container":"upmc-commercial-i7-2015-07",
+	"previousContainer":"ignore",
+	"modelName": "UPMC Commercial Jul 2015",
+	"ssisPackage": "ignore",
+	"customerNumber": "03"
+}
