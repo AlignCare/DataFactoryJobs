@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<job name="PrescienceRx v3.7" model="${workflow:modelname}" customer="${workflow:customernumber}">
+	<group name="step1-get-tables">
+    <step name="analyticstable" queue="table2hdinsight" item="analyticstable"/>
+    <step name="analyticsleveltable" queue="table2hdinsight" item="analyticsleveltable"/>
+    <step name="ndc2rxmgtable" queue="table2hdinsight" item="ndc2rxmgtable"/>
+    <step name="ndctable" queue="table2hdinsight" item="ndctable"/>
+    <step name="drugnametable" queue="table2hdinsight" item="drugnametable"/>
+    <step name="tcgpitable" queue="table2hdinsight" item="tcgpitable"/>
+    <step name="customertable" queue="table2hdinsight" item="customertable"/>
+    <step name="modeltable" queue="table2hdinsight" item="modeltable"/>
+    <step name="patienttable" queue="table2hdinsight" item="patienttable"/>
+    <step name="rxtable" queue="table2hdinsight" item="rxtable"/>
+    <step name="providertable" queue="table2hdinsight" item="providertable"/>
+    <step name="hrmtable" queue="table2hdinsight" item="hrmtable" />
+  </group>
+	<group name="step2-acg-hive">
+    <step name="medispantables" queue="hivequery" item="CreateMedispan.hql"/>
+    <step name="acgtables" queue="hivequery" item="CreateACG.hql"/>
+    <step name="systemtables" queue="hivequery" item="CreateSystemTables.hql"/>
+    <step name="aligncaretables" queue="hivequery" item="CreateAlignCare.hql"/>
+    <step name="mapreducetables" queue="hivequery" item="CreateMapReduceTables.hql"/>
+    <step name="conditionstable" queue="hivequery" item="ConditionsTable.hql"/>
+    <step name="drugtable" queue="hivequery" item="DrugTable.hql"/>
+  </group>
+  <group name="Step3-analytics">
+    <step name="acg" queue="acg" item="${workflow:acgfolder}" runmedicalservices="Yes" />
+    <step name="PredominantPrescriberTable" queue="hivequery" item="PredominantPrescriberTable.hql"/>
+  </group>
+  <group name="Step4-more-analytics">
+    <step name="beneficiaryscript" queue="hivequery" item="BeneficiaryScriptTable.hql"/>
+    <step name="metricstable" queue="hivequery" item="ModelMetrics.hql"/>
+    <step name="beneficiarytable" queue="hivequery" item="BeneficiaryTable.hql"/>
+  </group>
+</job>

@@ -1,0 +1,9 @@
+{
+  "name": "PRx-i7-transfertoapp.xml",
+  "container": "ignore",
+  "previousContainer": "ignore",
+  "modelName": "ignore",
+  "ssisPackage": "_Prod",
+  "customerNumber": "03",
+  "dbname": "PresciencRx_Prod_App"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "PRx-i7-preprocessing.xml",
+  "container": "upmc-research-medicare-jan-dec2015",
+  "previousContainer": "NA",
+  "modelName": "UPMC Research MediCare Jan - Dec 2015",
+  "ssisPackage": "NA",
+  "customerNumber": "03",
+  "acgFolder": "NA",
+  "dbName": "NA"
+}

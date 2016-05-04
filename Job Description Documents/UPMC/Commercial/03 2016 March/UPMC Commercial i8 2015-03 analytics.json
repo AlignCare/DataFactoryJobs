@@ -1,0 +1,10 @@
+{
+	"name":"PRx-i8-analytics.xml",
+	"container":"upmc-commercial-i8-2016-03",
+	"previousContainer":"upmc-commercial-i7-2016-02",
+	"modelName": "UPMC Commercial Mar 2016",
+	"ssisPackage": "NA",
+	"customerNumber": "03",
+	"acgFolder": "temp",
+	"dbName": "NA"
+}
