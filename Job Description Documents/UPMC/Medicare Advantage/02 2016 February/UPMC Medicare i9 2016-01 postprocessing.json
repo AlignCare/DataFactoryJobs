@@ -1,0 +1,10 @@
+{
+	"name":"PRx-i9-postprocessing.xml",
+	"container":"upmc-medicare-i8-2016-02",
+	"previousContainer":"NA",
+	"modelName": "UPMC Medicare Feb 2016",
+	"ssisPackage": "_Prod",
+	"customerNumber": "03",
+	"acgFolder": "NA",
+	"dbName": "PrescienceRx_Staging_Prod"
+}

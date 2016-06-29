@@ -1,10 +1,10 @@
 {
   "name": "testjob.xml",
-  "container": "hdinsight-aligncare-i8-2014-10",
+  "container": "hdinsight-aligncare-i10-2014-10",
   "previousContainer": "hdinsight-aligncare-i7-2014-09",
   "modelName": "AlignCare Oct 2014",
   "ssisPackage": "NA",
   "customerNumber": "01",
   "acgFolder": "temp",
-  "dbName": "NA"
+  "dbName": "PresciencRx_Dev_App"
 }

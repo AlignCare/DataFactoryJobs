@@ -1,0 +1,10 @@
+{
+  "name": "PRx-i8-analytics-research.xml",
+  "container": "upmc-research-medicare-jan-jun2015",
+  "previousContainer": "hdinsight",
+  "modelName": "UPMC Research MediCare Jan - Jun 2015",
+  "ssisPackage": "NA",
+  "customerNumber": "03",
+  "acgFolder": "temp",
+  "dbName": "NA"
+}

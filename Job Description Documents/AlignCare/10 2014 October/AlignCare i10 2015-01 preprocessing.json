@@ -1,0 +1,10 @@
+{
+	"name":"PRx-i10-preprocessing.xml",
+	"container":"hdinsight-aligncare-i10-2014-10",
+	"previousContainer":"NA",
+	"modelName": "AlignCare Oct 2014",
+	"ssisPackage": "NA",
+	"customerNumber": "01",
+	"acgFolder": "NA",
+	"dbName": "NA"
+}

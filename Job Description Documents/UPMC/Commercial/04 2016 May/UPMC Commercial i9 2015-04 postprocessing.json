@@ -1,0 +1,10 @@
+{
+	"name":"PRx-i9-postprocessing.xml",
+	"container":"upmc-commercial-i8-2016-05",
+	"previousContainer":"NA",
+	"modelName": "UPMC Commercial May 2016",
+	"ssisPackage": "_Prod",
+	"customerNumber": "03",
+	"acgFolder": "NA",
+	"dbName": "PrescienceRx_Staging_Prod"
+}

@@ -1,8 +1,0 @@
-{
-	"name":"PRx-i7-RxHistory.xml",
-  "container": "upmc-medicare-i7-rx",
-	"previousContainer":"ignore",
-	"modelName": "UPMC Medicare Rx",
-	"ssisPackage": "ignore",
-	"customerNumber": "03"
-}

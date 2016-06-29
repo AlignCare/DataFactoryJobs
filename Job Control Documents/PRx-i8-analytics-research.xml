@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<job name="PrescienceRx v3.7" model="${workflow:modelname}" customer="${workflow:customernumber}">
+	<group name="Step1">
+    <step name="acg" queue="acg" item="${workflow:acgfolder}" runmedicalservices="Yes" />
+    <step name="PredominantPrescriberTable" queue="hivequery" item="PredominantPrescriberTable.hql"/>
+	</group>
+	<group name="Step2">
+    <step name="beneficiaryscript" queue="hivequery" item="BeneficiaryScriptTable.hql"/>
+    <step name="metricstable" queue="hivequery" item="ModelMetrics.hql"/>
+		<step name="beneficiarytable" queue="hivequery" item="BeneficiaryTable.hql"/>
+		<step name="patientconditiontable" queue="hivequery" item="PatientConditionTable.hql"/>
+		<step name="actionalert" queue="hivequery" item="ActionAlertTable.hql"/>
+		<step name="createsummary" queue="hivequery" item="CreateSummaryTable.hql"/>
+	</group>
+</job>

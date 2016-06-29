@@ -1,0 +1,10 @@
+{
+	"name":"PRx-i10-postprocessing.xml",
+	"container":"hdinsight-aligncare-i10-2014-12",
+	"previousContainer":"NA",
+	"modelName": "AlignCare Dec 2014",
+	"ssisPackage": "_Dev",
+	"customerNumber": "01",
+	"acgFolder": "NA",
+	"dbName": "PresciencRx_Dev_App"
+}

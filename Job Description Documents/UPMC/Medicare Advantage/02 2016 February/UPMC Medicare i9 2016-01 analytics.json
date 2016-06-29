@@ -1,0 +1,10 @@
+{
+	"name":"PRx-i8-analytics.xml",
+	"container":"upmc-medicare-i8-2016-02",
+	"previousContainer":"upmc-medicare-i8-2016-01",
+	"modelName": "UPMC Medicare Feb 2016",
+	"ssisPackage": "NA",
+	"customerNumber": "03",
+	"acgFolder": "temp",
+	"dbName": "NA"
+}

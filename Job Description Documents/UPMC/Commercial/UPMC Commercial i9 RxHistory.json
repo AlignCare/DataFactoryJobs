@@ -1,0 +1,8 @@
+{
+	"name":"PRx-i9-RxHistory.xml",
+	"container":"upmc-commercial-i7-rx",
+	"previousContainer":"ignore",
+	"modelName": "UPMC Commercial Rx",
+	"ssisPackage": "ignore",
+	"customerNumber": "03"
+}
