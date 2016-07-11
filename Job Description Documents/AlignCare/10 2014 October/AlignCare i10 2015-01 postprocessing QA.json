@@ -3,7 +3,7 @@
 	"container":"hdinsight-aligncare-i10-2014-10",
 	"previousContainer":"NA",
 	"modelName": "NA",
-	"ssisPackage": "_Dev",
+	"ssisPackage": "_QA",
 	"customerNumber": "01",
 	"acgFolder": "NA",
 	"dbName": "PresciencRx_QA_App"

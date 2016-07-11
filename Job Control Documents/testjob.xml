@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <job name="PrescienceRx v3.7" model="${workflow:modelname}" customer="${workflow:customernumber}">
   <group name="ExportData">
-		<step name="InsertBeneficiaryScriptTable" queue="dataextract" item="beneficiaryscripttable" informat="tab"/>
+    <step name="InsertPatientMRI" queue="dataextract" item="PatientMRI" informat="tab"/>
   </group>
 </job>

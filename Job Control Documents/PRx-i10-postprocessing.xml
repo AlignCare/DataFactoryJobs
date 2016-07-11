@@ -12,7 +12,7 @@
 		<step name="InsertPatientActionAlertTable" queue="dataextract" item="ActionAlertTable" informat="tab"/>
 		<step name="InsertPatientConditionTable" queue="dataextract" item="patientconditiontable" informat="tab"/>
 		<step name="InsertBeneficiaryScriptTable" queue="dataextract" item="beneficiaryscripttable" informat="tab"/>
-    <step name="InsertPatientMRI" queue="dataextract" item="patientmri" informat="tab"/>
+    <step name="InsertPatientMRI" queue="dataextract" item="PatientMRI" informat="tab"/>
     <step name="InsertPrescriptionFillHistory" queue="dataextract" item="rxTable" informat="tab"/>
   </group>
   <group name="runElasticLoad">
