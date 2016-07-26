@@ -1,0 +1,10 @@
+{
+	"name":"PRx-i10-preprocessing.xml",
+	"container":"upmc-medicare-i10-2016-06",
+	"previousContainer":"NA",
+	"modelName": "UPMC Medicare Jun 2016",
+	"ssisPackage": "NA",
+	"customerNumber": "03",
+	"acgFolder": "NA",
+	"dbName": "NA"
+}
