@@ -1,0 +1,11 @@
+{
+	"name":"PRx-i11-complete.xml",
+	"container":"jhhc-prioritypartners-i10-2016-03",
+	"previousContainer":"hdinsight",
+	"modelName": "JHHC Priority Partners Mar 2016",
+	"ssisPackage": "ignore",
+	"customerNumber": "03",
+	"acgFolder": "temp",
+	"stopAt": "step4-hive-analytics.patientconditiontable",
+	"dbName": "PresciencRx_Dev_App"
+}

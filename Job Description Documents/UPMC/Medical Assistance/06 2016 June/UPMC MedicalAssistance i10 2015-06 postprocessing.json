@@ -1,10 +1,10 @@
 {
 	"name":"PRx-i10-postprocessing.xml",
-	"container":"upmc-medicare-i10-2016-06",
+	"container":"upmc-medicalassistance-i10-2016-06",
 	"previousContainer":"NA",
-	"modelName": "UPMC Medicare Jun 2016",
+	"modelName": "UPMC Medical Assistance Jun 2016",
 	"ssisPackage": "_Prod",
 	"customerNumber": "03",
 	"acgFolder": "NA",
-	"dbName": "PrescienceRx_Prod_App"
+	"dbName": "PresciencRx_Prod_App"
 }

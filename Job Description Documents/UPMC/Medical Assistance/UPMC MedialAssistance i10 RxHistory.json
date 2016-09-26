@@ -4,5 +4,7 @@
 	"previousContainer":"ignore",
 	"modelName": "UPMC Medical Assistance Rx",
 	"ssisPackage": "ignore",
-	"customerNumber": "03"
+	"customerNumber": "03",
+	"acgFolder": "temp",
+	"dbName": "PresciencRx_Prod_App"
 }

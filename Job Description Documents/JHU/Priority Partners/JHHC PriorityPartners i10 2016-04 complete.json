@@ -1,0 +1,10 @@
+{
+	"name":"PRx-i11-complete.xml",
+	"container":"jhhc-prioritypartners-i10-2016-04",
+	"previousContainer":"jhhc-prioritypartners-i10-2016-03",
+	"modelName": "JHHC Priority Partners Apr 2016",
+	"ssisPackage": "ignore",
+	"customerNumber": "03",
+	"acgFolder": "temp",
+	"dbName": "PresciencRx_Dev_App"
+}

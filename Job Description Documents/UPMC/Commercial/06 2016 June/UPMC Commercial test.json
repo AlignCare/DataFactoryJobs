@@ -1,0 +1,10 @@
+{
+	"name":"testjob.xml",
+	"container":"upmc-commercial-i10-2016-06",
+	"previousContainer":"NA",
+	"modelName": "UPMC Commercial Jun 2016",
+	"ssisPackage": "_Prod",
+	"customerNumber": "03",
+	"acgFolder": "NA",
+	"dbName": "PresciencRx_Prod_App"
+}

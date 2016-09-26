@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <job name="PrescienceRx v3.7" model="${workflow:modelname}" customer="${workflow:customernumber}">
-  <group name="TruncateTables">
+	<group name="TruncateTables">
     <step name="TruncateAppDBTables" queue="sql" item="TSQL" dbname="${workflow:dbname}"/>
   </group>
-  <group name="ExportData">
-    <step name="InsertPatientMRI" queue="dataextract" item="PatientMRI" informat="tab"/>
+	<group name="ExportData">
+    <step name="InsertDrugTable" queue="dataextract" item="presciencerxdrugs" informat="tab"/>
   </group>
 </job>
