@@ -1,0 +1,10 @@
+{
+	"name":"PRx-i11-complete.xml",
+	"container":"upmc-medicare-i10-2016-09",
+	"previousContainer":"upmc-medicare-i10-2016-08",
+	"modelName": "UPMC Medicare Sep 2016",
+	"ssisPackage": "ignore",
+	"customerNumber": "03",
+	"acgFolder": "temp",
+	"dbName": "PresciencRx_Prod_App"
+}

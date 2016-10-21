@@ -1,8 +1,9 @@
 {
-	"name":"PRx-i11-aligncare-complete.xml",
+	"name":"PRx-i11-complete.xml",
 	"container":"hdinsight-aligncare-i10-2014-10",
 	"previousContainer":"hdinsight-aligncare-i7-2014-09",
 	"modelName": "AlignCare Oct 2014",
+	"stopAt": "step7-run-elastic-load",
 	"ssisPackage": "NA",
 	"customerNumber": "01",
 	"acgFolder": "temp",

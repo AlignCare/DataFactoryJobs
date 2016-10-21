@@ -3,6 +3,7 @@
 	"container":"hdinsight-aligncare-i10-2014-12",
 	"previousContainer":"hdinsight-aligncare-i10-2014-11",
 	"modelName": "AlignCare Dec 2014",
+	"stopAt": "step7-run-elastic-load",
 	"ssisPackage": "NA",
 	"customerNumber": "01",
 	"acgFolder": "temp",

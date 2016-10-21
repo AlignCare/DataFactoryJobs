@@ -1,8 +1,8 @@
 {
 	"name":"PRx-i11-complete.xml",
-	"container":"jhhc-prioritypartners-i10-2016-04",
-	"previousContainer":"jhhc-prioritypartners-i10-2016-03",
-	"modelName": "JHHC Priority Partners Apr 2016",
+	"container":"jhhc-prioritypartners-i10-2016-01",
+	"previousContainer":"jhhc-prioritypartners-i10-2015-12",
+	"modelName": "JHHC Priority Partners Jan 2016",
 	"ssisPackage": "ignore",
 	"customerNumber": "05",
 	"acgFolder": "temp",

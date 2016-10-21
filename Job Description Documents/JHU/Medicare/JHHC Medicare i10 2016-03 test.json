@@ -6,6 +6,7 @@
 	"ssisPackage": "ignore",
 	"customerNumber": "05",
 	"acgFolder": "temp",
-	"stopAt": "step4-hive-analytics.patientconditiontable",
-	"dbName": "PresciencRx_Dev_App"
+    "startAt": "step1-extract-from-azure-tables.rxtable",
+	"stopAt": "step1-extract-from-azure-tables.rxtable",
+	"dbName": "PresciencRx_QA_App"
 }
