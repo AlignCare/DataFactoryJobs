@@ -1,5 +1,5 @@
 {
-	"name":"PRx-i11-aligncare-complete.xml",
+	"name":"PRx-i12-aligncare-complete.xml",
 	"container":"hdinsight-aligncare-i10-2014-11",
 	"previousContainer":"hdinsight-aligncare-i10-2014-10",
 	"modelName": "AlignCare Nov 2014",
@@ -7,5 +7,6 @@
 	"ssisPackage": "NA",
 	"customerNumber": "01",
 	"acgFolder": "temp",
+	"rxModelName": "AlignCare Rx 2014",
 	"dbName": "PresciencRx_QA_App"
 }

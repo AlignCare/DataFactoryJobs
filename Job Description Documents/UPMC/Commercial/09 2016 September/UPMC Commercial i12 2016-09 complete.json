@@ -1,12 +1,13 @@
 {
-	"name":"PRx-i11-complete.xml",
+	"name":"PRx-i12-complete.xml",
 	"container":"upmc-commercial-i10-2016-09",
 	"previousContainer":"upmc-commercial-i10-2016-08",
 	"modelName": "UPMC Commercial Sep 2016",
 	"ssisPackage": "ignore",
 	"customerNumber": "03",
 	"acgFolder": "temp",
-	"startAt": "step2-define-hive-tables",
-	"stopAt": "step4-hive-analytics",
+	"startAt": "Step5-truncate-sql-tables",
+	"stopAt": "step7-run-elastic-load",
+	"rxModelName": "UPMC Commercial Rx",
 	"dbName": "PresciencRx_Prod_App"
 } 

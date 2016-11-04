@@ -1,0 +1,13 @@
+{
+	"name":"PRx-i12-complete.xml",
+	"container":"jhhc-prioritypartners-i10-2016-04",
+	"previousContainer":"jhhc-prioritypartners-i10-2016-03",
+	"modelName": "JHHC Priority Partners Apr 2016",
+	"ssisPackage": "ignore",
+	"customerNumber": "05",
+	"acgFolder": "temp",
+	"startAt": "Step5-truncate-sql-tables",
+	"stopAt" : "step7-get-prescriptionFillHistory",
+	"rxModelName": "JHHC Priority Partners Rx",
+	"dbName": "PresciencRx_QA_App"
+}

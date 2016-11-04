@@ -1,0 +1,11 @@
+{
+	"name":"PRx-i11-complete.xml",
+	"container":"jhhc-medicare-i10-2016-04",
+	"previousContainer":"jhhc-medicare-i10-2016-03",
+	"modelName": "JHHC Medicare Apr 2016",
+	"ssisPackage": "ignore",
+	"customerNumber": "05",
+	"acgFolder": "temp",
+	"rxModelName": "JHHC Medicare Rx",
+	"dbName": "PresciencRx_QA_App"
+}
