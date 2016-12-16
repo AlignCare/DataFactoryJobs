@@ -7,7 +7,6 @@
 	"customerNumber": "01",
 	"acgFolder": "temp",
 	"rxModelName": "AlignCare Rx",
-	"startAt": "step2-define-hive-tables",
-	"stopAt":"step4-hive-analytics",
+	"startAt": "step4-hive-analytics",
 	"dbName": "PresciencRx_Dev_App"
 }  

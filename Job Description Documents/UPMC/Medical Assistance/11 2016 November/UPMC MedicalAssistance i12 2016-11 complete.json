@@ -1,0 +1,11 @@
+{
+	"name":"PRx-i12-complete.xml",
+	"container":"upmc-medicalassistance-i10-2016-11",
+	"previousContainer":"upmc-medicalassistance-i10-2016-10",
+	"modelName": "UPMC Medical Assistance Nov 2016",
+	"ssisPackage": "ignore",
+	"customerNumber": "03",
+	"acgFolder": "temp",
+	"rxModelName": "UPMC Medical Assistance Rx",
+	"dbName": "PresciencRx_Prod_App"
+} 

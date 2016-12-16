@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<job name="PrescienceRx v3.7" model="${workflow:modelname}" customer="${workflow:customernumber}">
+  <group name="step1-extract-from-azure-tables">
+    <step name="analyticstable" queue="table2hdinsight" item="analyticstable"/>
+    <step name="analyticsleveltable" queue="table2hdinsight" item="analyticsleveltable"/>
+    <step name="ndc2rxmgtable" queue="table2hdinsight" item="ndc2rxmgtable"/>
+    <step name="ndctable" queue="table2hdinsight" item="ndctable"/>
+    <step name="drugnametable" queue="table2hdinsight" item="drugnametable"/>
+    <step name="tcgpitable" queue="table2hdinsight" item="tcgpitable"/>
+    <step name="customertable" queue="table2hdinsight" item="customertable"/>
+    <step name="modeltable" queue="table2hdinsight" item="modeltable"/>
+    <step name="patienttable" queue="table2hdinsight" item="patienttable"/>
+    <step name="rxtable" queue="table2hdinsight" item="rxtable"/>
+    <step name="providertable" queue="table2hdinsight" item="providertable"/>
+    <step name="hrmtable" queue="table2hdinsight" item="hrmtable" />
+  </group>
+  <group name="step2-define-hive-tables">
+    <step name="medispantables" queue="hivequery" item="CreateMedispan.hql"/>
+    <step name="acgtables" queue="hivequery" item="CreateACG.hql"/>
+    <step name="systemtables" queue="hivequery" item="CreateSystemTables.hql"/>
+    <step name="aligncaretables" queue="hivequery" item="CreateAlignCare.hql"/>
+    <step name="mapreducetables" queue="hivequery" item="CreateMapReduceTables.hql"/>
+    <step name="conditionstable" queue="hivequery" item="ConditionsTable.hql"/>
+    <step name="drugtable" queue="hivequery" item="DrugTable.hql"/>
+    <step name="druglists" queue="hivequery" item="DrugLists.hql"/>
+  </group>
+  <group name="step3-acg-and-predominantprescriber">
+    <step name="acg" queue="acg" item="Temp"/>
+    <step name="PredominantPrescriberTable" queue="hivequery" item="PredominantPrescriberTable.hql"/>
+  </group>
+  <group name="step4-hive-analytics">
+    <step name="beneficiaryscript" queue="hivequery" item="BeneficiaryScriptTable.hql"/>
+    <step name="metricstable" queue="hivequery" item="ModelMetrics.hql"/>
+    <step name="beneficiarytable" queue="hivequery" item="BeneficiaryTable.hql"/>
+    <step name="patientconditiontable" queue="hivequery" item="PatientConditionTable.hql"/>
+    <step name="actionalert" queue="hivequery" item="ActionAlertTable.hql"/>
+    <step name="createsummary" queue="hivequery" item="CreateSummaryTable.hql"/>
+  </group>
+  <group name="step5-adherence-overall">
+    <step name="createtables" queue="hivequery" item="MRICreateTable.hql"/>
+    <step name="overallmriscore" queue="hivequery" item="MRIAll.hql"/>
+    <step name="computepdc-1" queue="hivequery" item="MRIComputePDC.hql"/>
+    <step name="mergemridata-1" queue="hivequery" item="MRIOverwrite.hql"/>
+  </group>
+  <group name="step5-adherence-diabetes">
+    <step name="diabetesmriscore" queue="hivequery" item="MRIDiabetes.hql"/>
+    <step name="computepdc-2" queue="hivequery" item="MRIComputePDC.hql"/>
+    <step name="mergemridata-2" queue="hivequery" item="MRIAppend.hql"/>
+  </group>
+  <group name="step5-adherence-diabetesadherence">
+    <step name="diabetesadherencemriscore" queue="hivequery" item="MRIDiabetesAdherence.hql"/>
+    <step name="computepdc-3" queue="hivequery" item="MRIComputePDC.hql"/>
+    <step name="mergemridata-3" queue="hivequery" item="MRIAppend.hql"/>
+  </group>
+  <group name="step5-adherence-hypertension">
+    <step name="hypertensionmriscore" queue="hivequery" item="MRIHypertensionAdherence.hql"/>
+    <step name="computepdc-4" queue="hivequery" item="MRIComputePDC.hql"/>
+    <step name="mergemridata-4" queue="hivequery" item="MRIAppend.hql"/>
+  </group>
+  <group name="step5-adherence-cholesterol">
+    <step name="cholesterolmriscore" queue="hivequery" item="MRIStatinAdherence.hql"/>
+    <step name="computepdc-5" queue="hivequery" item="MRIComputePDC.hql"/>
+    <step name="mergemridata-5" queue="hivequery" item="MRIAppend.hql"/>
+  </group>
+  <group name="Step6-truncate-sql-tables">
+    <step name="TruncateAppDBTables" queue="sql" item="TSQL" dbname="${workflow:dbname}"/>
+  </group>
+  <group name="step7-export-to-sql">
+    <step name="rxtable" queue="table2hdinsight" item="rxtable" model= "${workflow:rxmodelname}"/>
+    <step name="InsertDrugTable" queue="dataextract" item="presciencerxdrugs" informat="tab"/>
+    <step name="InsertModelTable" queue="dataextract" item="modelTable" informat="tab"/>
+    <step name="InsertPrescienceRxProviders" queue="dataextract" item="providerTable" informat="tab"/>
+    <step name="InsertCalculatedMetrics_new" queue="dataextract" item="summarytable" informat="tab"/>
+    <step name="InsertPrescienceRxBeneficiaries" queue="dataextract" item="beneficiarytable" informat="tab"/>
+    <step name="InsertPatientActionAlertTable" queue="dataextract" item="ActionAlertTable" informat="tab"/>
+    <step name="InsertPatientConditionTable" queue="dataextract" item="patientconditiontable" informat="tab"/>
+    <step name="InsertBeneficiaryScriptTable" queue="dataextract" item="beneficiaryscripttable" informat="tab"/>
+    <step name="InsertPatientMRI" queue="dataextract" item="PatientMRI" informat="tab"/>
+  </group>
+  <group name="step8-get-prescriptionFillHistory">
+    <step name="InsertPrescriptionFillHistory" queue="dataextract" item="rxTable" informat="tab"/>
+  </group>
+  <group name="step9-run-elastic-load">
+    <step name="PrescienceRx.RunLoad.exe" queue="sql" item="OS"/>
+  </group>
+</job>

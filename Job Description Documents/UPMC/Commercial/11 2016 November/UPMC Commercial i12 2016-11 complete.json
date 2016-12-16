@@ -1,0 +1,11 @@
+{
+	"name":"PRx-i12-complete.xml",
+	"container":"upmc-commercial-i10-2016-11",
+	"previousContainer":"upmc-commercial-i10-2016-10",
+	"modelName": "UPMC Commercial Nov 2016",
+	"ssisPackage": "ignore",
+	"customerNumber": "03",
+	"acgFolder": "temp",
+	"rxModelName": "UPMC Commercial Rx",
+	"dbName": "PresciencRx_Prod_App"
+} 
