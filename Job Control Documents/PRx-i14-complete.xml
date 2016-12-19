@@ -66,7 +66,6 @@
     <step name="TruncateAppDBTables" queue="sql" item="TSQL" dbname="${workflow:dbname}"/>
   </group>
   <group name="step7-export-to-sql">
-    <step name="rxtable" queue="table2hdinsight" item="rxtable" model= "${workflow:rxmodelname}"/>
     <step name="InsertDrugTable" queue="dataextract" item="presciencerxdrugs" informat="tab"/>
     <step name="InsertModelTable" queue="dataextract" item="modelTable" informat="tab"/>
     <step name="InsertPrescienceRxProviders" queue="dataextract" item="providerTable" informat="tab"/>
@@ -76,6 +75,7 @@
     <step name="InsertPatientConditionTable" queue="dataextract" item="patientconditiontable" informat="tab"/>
     <step name="InsertBeneficiaryScriptTable" queue="dataextract" item="beneficiaryscripttable" informat="tab"/>
     <step name="InsertPatientMRI" queue="dataextract" item="PatientMRI" informat="tab"/>
+    <step name="rxtable" queue="table2hdinsight" item="rxtable" model= "${workflow:rxmodelname}"/>
   </group>
   <group name="step8-get-prescriptionFillHistory">
     <step name="InsertPrescriptionFillHistory" queue="dataextract" item="rxTable" informat="tab"/>
