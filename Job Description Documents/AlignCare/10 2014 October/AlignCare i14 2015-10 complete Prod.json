@@ -1,4 +1,5 @@
 {
+	"stopAt":"step4-hive-analytics.beneficiarytable",
 	"name":"PRx-i14-complete.xml",
 	"container":"hdinsight-aligncare-i10-2014-10",
 	"previousContainer":"hdinsight-aligncare-i14-2014-09",
