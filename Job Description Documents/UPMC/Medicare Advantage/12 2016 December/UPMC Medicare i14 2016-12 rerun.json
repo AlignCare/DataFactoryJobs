@@ -1,0 +1,12 @@
+{
+	"stopAt":"step4-hive-analytics",
+	"name":"PRx-i14-rerun.xml",
+	"container":"upmc-medicare-i8-2016-01",
+	"previousContainer":"upmc-medicare-i8-2015-12",
+	"modelName": "UPMC Medicare Dec 2016",
+	"ssisPackage": "ignore",
+	"customerNumber": "03",
+	"acgFolder": "temp",
+	"rxModelName": "UPMC Medicare Rx",
+	"dbName": "PresciencRx_Prod_App"
+} 

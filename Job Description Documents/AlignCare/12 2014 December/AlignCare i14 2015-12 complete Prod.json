@@ -1,4 +1,5 @@
 {
+	"startAt":"step2-define-hive-tables",
 	"name":"PRx-i14-complete.xml",
 	"container":"hdinsight-aligncare-i10-2014-12",
 	"previousContainer":"hdinsight-aligncare-i10-2014-11",

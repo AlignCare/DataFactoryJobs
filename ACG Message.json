@@ -1,0 +1,12 @@
+{
+    "runMedicalServices":"No",
+    "rav":"US-AGEALL",
+    "name":"acg",
+    "queue":"acg",
+    "item":"Temp",
+    "responseQueue":"response",
+    "model":"AlignCare Oct 2014",
+    "customerNumber":"01",
+    "container":"hdinsight-aligncare-i10-2014-10",
+    "previousContainer":"hdinsight-aligncare-i14-2014-09"
+}
