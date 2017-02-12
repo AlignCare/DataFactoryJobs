@@ -26,6 +26,7 @@
   </group>
   <group name="step3-acg-and-predominantprescriber">
     <step name="acg" queue="acg" item="Temp"  runmedicalservices="No" rav="${workflow:rav}"/>
+    <step name="extendedRxTable" queue="hivequery" item="ExtendedRxTable.hql"/>
     <step name="PredominantPrescriberTable" queue="hivequery" item="PredominantPrescriberTable.hql"/>
   </group>
   <group name="step4-hive-analytics">

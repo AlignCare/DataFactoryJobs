@@ -1,9 +1,8 @@
 {
-	"stopAt":"step1-extract-from-azure-tables",
 	"name":"PRx-i14-complete.xml",
-	"container":"upmc-medicare-i10-2016-12",
-	"previousContainer":"upmc-medicare-i10-2016-11",
-	"modelName": "UPMC Medicare Dec 2016",
+	"container":"upmc-medicare-i10-2017-01",
+	"previousContainer":"upmc-medicare-i10-2016-12",
+	"modelName": "UPMC Medicare Jan 2017",
 	"ssisPackage": "ignore",
 	"customerNumber": "03",
 	"acgFolder": "temp",
