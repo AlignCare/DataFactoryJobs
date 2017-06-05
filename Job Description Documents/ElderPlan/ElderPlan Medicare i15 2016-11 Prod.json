@@ -1,0 +1,13 @@
+{
+	"stopAt":"step4-hive-analytics",
+	"name":"PRx-i15-complete.xml",
+	"container":"mjhs-medicare-i15-2016-11",
+	"previousContainer":"hdinsight",
+	"modelName": "ElderPlan Medicare Nov 2016",
+	"ssisPackage": "ignore",
+	"customerNumber": "06",
+	"acgFolder": "temp",
+	"rxModelName": "UPMC Medicare Rx",
+	"dbName": "PresciencRx_Prod_App",
+	"rav": "US-ELD"
+} 

@@ -1,0 +1,13 @@
+{
+	"stopAt":"step3-acg-and-predominantprescriber.acg",
+	"name":"PRx-i15-complete.xml",
+	"container":"hdinsight-aligncare-i15-2014-10",
+	"previousContainer":"hdinsight-aligncare-i15-2014-09",
+	"modelName": "AlignCare Oct 2014",
+	"ssisPackage": "NA",
+	"customerNumber": "01",
+	"acgFolder": "temp",
+	"rxModelName": "AlignCare Rx",
+	"dbName": "PresciencRx_QA_App",
+	"rav":"US-NONELD"
+}

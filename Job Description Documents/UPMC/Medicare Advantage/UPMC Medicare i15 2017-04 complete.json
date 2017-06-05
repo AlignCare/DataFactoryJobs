@@ -1,0 +1,14 @@
+{
+	"startAt":"Step6-truncate-sql-tables",
+	"stopAt":"step7-export-to-sql",
+	"name":"PRx-i15-complete.xml",
+	"container":"upmc-medicare-i15-2017-04",
+	"previousContainer":"upmc-medicare-i15-2017-03",
+	"modelName": "UPMC Medicare Apr 2017",
+	"ssisPackage": "ignore",
+	"customerNumber": "03",
+	"acgFolder": "temp",
+	"rxModelName": "UPMC Medicare Rx",
+	"dbName": "PresciencRx_Prod_App",
+	"rav": "US-ALLAGE"
+} 

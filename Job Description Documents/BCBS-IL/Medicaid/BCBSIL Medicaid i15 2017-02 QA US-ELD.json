@@ -1,0 +1,12 @@
+{
+	"name":"PRx-i15-complete.xml",
+	"container":"bcbsil-medicaid-i15-2017-02-us-eld",
+	"previousContainer":"bcbsil-medicaid-i15-2017-01-us-eld",
+	"modelName": "BCBS-IL Medicaid Feb 2017 US-ELD",
+	"ssisPackage": "ignore",
+	"customerNumber": "07",
+	"acgFolder": "temp",
+	"rxModelName": "BCBS-IL Medicaid Rx",
+	"dbName": "PresciencRx_QA_App",
+	"rav": "US-ELD"
+} 

@@ -1,0 +1,13 @@
+{
+	"stopAt" : "step4-hive-analytics",
+	"name":"PRx-i15-complete.xml",
+	"container":"hdinsight-aligncare-i15-2014-09",
+	"previousContainer":"hdinsight",
+	"modelName": "AlignCare Sep 2014",
+	"ssisPackage": "NA",
+	"customerNumber": "01",
+	"acgFolder": "temp",
+	"rxModelName": "AlignCare Rx",
+	"dbName": "PresciencRx_QA_App",
+	"rav":"US-NONELD"
+}  
