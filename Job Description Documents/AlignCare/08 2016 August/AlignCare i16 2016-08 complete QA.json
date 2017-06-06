@@ -1,5 +1,4 @@
 {
-	"stopAt" : "step4-hive-analytics",
 	"name":"PRx-i16-complete.xml",
 	"container":"hdinsight-aligncare-i15-2016-08",
 	"previousContainer":"hdinsight-aligncare-i15-2016-07",
