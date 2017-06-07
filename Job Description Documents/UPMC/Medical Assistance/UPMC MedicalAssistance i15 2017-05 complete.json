@@ -1,8 +1,8 @@
 {
 	"name":"PRx-i15-complete.xml",
-	"container":"upmc-medicalassistance-i15-2017-04",
-	"previousContainer":"upmc-medicalassistance-i15-2017-03",
-	"modelName": "UPMC Medical Assistance Apr 2017",
+	"container":"upmc-medicalassistance-i15-2017-05",
+	"previousContainer":"upmc-medicalassistance-i15-2017-04",
+	"modelName": "UPMC Medical Assistance May 2017",
 	"ssisPackage": "ignore",
 	"customerNumber": "03",
 	"acgFolder": "temp",
