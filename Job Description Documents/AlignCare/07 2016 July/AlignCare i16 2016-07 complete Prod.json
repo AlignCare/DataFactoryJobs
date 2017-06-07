@@ -1,0 +1,12 @@
+{
+	"name":"PRx-i16-complete.xml",
+	"container":"hdinsight-aligncare-i15-2016-07",
+	"previousContainer":"hdinsight-aligncare-i15-2016-06",
+	"modelName": "AlignCare Jul 2016",
+	"ssisPackage": "NA",
+	"customerNumber": "01",
+	"acgFolder": "temp",
+	"rxModelName": "AlignCare Rx",
+	"dbName": "PresciencRx_Prod_App",
+	"rav":"US-ELD"
+}  
