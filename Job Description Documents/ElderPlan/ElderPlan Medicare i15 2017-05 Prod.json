@@ -1,0 +1,12 @@
+{
+	"name":"PRx-i15-complete.xml",
+	"container":"mjhs-medicare-i15-2017-05",
+	"previousContainer":"mjhs-medicare-i15-2017-04",
+	"modelName": "ElderPlan Medicare May 2017",
+	"ssisPackage": "ignore",
+	"customerNumber": "06",
+	"acgFolder": "temp",
+	"rxModelName": "ElderPlan Medicare Rx",
+	"dbName": "PresciencRx_Prod_App",
+	"rav": "US-ELD"
+} 

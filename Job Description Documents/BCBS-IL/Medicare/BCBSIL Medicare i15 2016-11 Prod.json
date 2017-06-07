@@ -1,0 +1,13 @@
+{
+	"stopAt":"step4-hive-analytics",
+	"name":"PRx-i15-complete.xml",
+	"container":"bcbsil-medicare-i15-2016-11",
+	"previousContainer":"hdinsight",
+	"modelName": "BCBS-IL Medicare Nov 2016",
+	"ssisPackage": "ignore",
+	"customerNumber": "07",
+	"acgFolder": "temp",
+	"rxModelName": "BCBS-IL Medicare Rx",
+	"dbName": "PresciencRx_Prod_App",
+	"rav": "US-ELD"
+} 
