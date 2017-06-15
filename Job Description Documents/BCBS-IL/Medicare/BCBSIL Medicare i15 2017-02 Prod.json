@@ -1,4 +1,5 @@
 {
+	"stopAt":"step4-hive-analytics",
 	"name":"PRx-i16-complete.xml",
 	"container":"bcbsil-medicare-i15-2017-02",
 	"previousContainer":"bcbsil-medicare-i15-2017-01",
