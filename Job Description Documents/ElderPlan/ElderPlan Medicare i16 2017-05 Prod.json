@@ -1,4 +1,6 @@
 {
+	"startAt":"Step6-truncate-sql-tables",
+	"stopAt":"step8-get-prescriptionFillHistory",
 	"name":"PRx-i16-complete.xml",
 	"container":"mjhs-medicare-i15-2017-05",
 	"previousContainer":"mjhs-medicare-i15-2017-04",
