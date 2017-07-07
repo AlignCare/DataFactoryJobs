@@ -1,0 +1,12 @@
+{
+	"name":"PRx-i16-complete.xml",
+	"container":"upmc-medicare-i15-2017-06",
+	"previousContainer":"upmc-medicare-i15-2017-05",
+	"modelName": "UPMC Medicare Jun 2017",
+	"ssisPackage": "ignore",
+	"customerNumber": "03",
+	"acgFolder": "temp",
+	"rxModelName": "UPMC Medicare Rx",
+	"dbName": "PresciencRx_Prod_App",
+	"rav": "US-ALLAGE"
+} 
