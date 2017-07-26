@@ -1,5 +1,4 @@
 {
-	"startAt" : "Step6-truncate-sql-tables",
 	"name":"PRx-i15-complete.xml",
 	"container":"bcbsil-medicaid-i15-2016-12",
 	"previousContainer":"bcbsil-medicaid-i15-2016-11",
