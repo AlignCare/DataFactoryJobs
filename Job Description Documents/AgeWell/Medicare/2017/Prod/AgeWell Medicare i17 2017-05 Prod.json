@@ -1,0 +1,13 @@
+{
+	"stopAt":"step4-hive-analytics",
+	"name":"PRx-i17-complete.xml",
+	"container":"agewell-medicare-i17-2017-05",
+	"previousContainer":"hdinsight",
+	"modelName":"AgeWell Medicare May 2017",
+	"ssisPackage":"ignore",
+	"customerNumber":"08",
+	"acgFolder":"temp",
+	"rxModelName":"AgeWell Medicare Rx",
+	"dbName":"PresciencRx_Prod_App",
+	"rav":"US-ELD"
+}
