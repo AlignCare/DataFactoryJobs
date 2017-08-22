@@ -1,0 +1,12 @@
+{
+	"name":"PRx-i17-complete.xml",
+	"container":"upmc-commercial-i17-2017-07",
+	"previousContainer":"upmc-commercial-i15-2017-06",
+	"modelName": "UPMC Commercial Jul 2017",
+	"ssisPackage": "ignore",
+	"customerNumber": "03",
+	"acgFolder": "temp",
+	"rxModelName": "UPMC Commercial Rx",
+	"dbName": "PresciencRx_Prod_App",
+	"rav": "US-ALLAGE"
+} 
