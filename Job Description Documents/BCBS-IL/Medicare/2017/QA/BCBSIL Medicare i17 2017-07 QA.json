@@ -1,0 +1,12 @@
+{
+	"name":"PRx-i17-complete.xml",
+	"container":"bcbsil-medicare-i17-2017-07",
+	"previousContainer":"bcbsil-medicare-i17-2017-06",
+	"modelName":"BCBS-IL Medicare Jul 2017",
+	"ssisPackage":"ignore",
+	"customerNumber":"07",
+	"acgFolder":"temp",
+	"rxModelName":"BCBS-IL Medicare Rx",
+	"dbName":"PresciencRx_QA_App",
+	"rav":"US-ELD"
+}
