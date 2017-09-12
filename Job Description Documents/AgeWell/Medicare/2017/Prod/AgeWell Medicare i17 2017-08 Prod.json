@@ -1,0 +1,12 @@
+{
+	"name":"PRx-i17-complete.xml",
+	"container":"agewell-medicare-i17-2017-08",
+	"previousContainer":"agewell-medicare-i17-2017-07",
+	"modelName":"AgeWell Medicare Aug 2017",
+	"ssisPackage":"ignore",
+	"customerNumber":"08",
+	"acgFolder":"temp",
+	"rxModelName":"AgeWell Medicare Rx",
+	"dbName":"PresciencRx_Prod_App",
+	"rav":"US-ELD"
+}
