@@ -1,0 +1,13 @@
+{
+	"stopAt": "step4-hive-analytics",
+	"name":"PRx-i17-complete.xml",
+	"container":"upmc-commercial-i17-2017-08",
+	"previousContainer":"upmc-commercial-i17-2017-07",
+	"modelName": "UPMC Commercial Aug 2017",
+	"ssisPackage": "ignore",
+	"customerNumber": "03",
+	"acgFolder": "temp",
+	"rxModelName": "UPMC Commercial Rx",
+	"dbName": "PresciencRx_Prod_App",
+	"rav": "US-ALLAGE"
+} 

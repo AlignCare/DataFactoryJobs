@@ -1,6 +1,7 @@
 {
+	"stopAt":"step9-run-elastic-load",
 	"name":"PRx-i17-complete.xml",
-	"container":"hdinsight-aligncare-i15-2016-08",
+	"container":"hdinsight-aligncare-i17-2016-08",
 	"previousContainer":"hdinsight-aligncare-i15-2016-07",
 	"modelName": "AlignCare Aug 2016",
 	"ssisPackage": "NA",
