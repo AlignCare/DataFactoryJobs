@@ -1,4 +1,5 @@
 {
+	"startAt": "step9-run-elastic-load",
 	"name":"PRx-i17-complete.xml",
 	"container":"upmc-medicare-i17-2017-08",
 	"previousContainer":"upmc-medicare-i17-2017-07",
@@ -8,5 +9,5 @@
 	"acgFolder": "temp",
 	"rxModelName": "UPMC Medicare Rx",
 	"dbName": "PresciencRx_Prod_App",
-	"rav": "US-ALLAGE"
+	"rav": "US-ELD"
 } 
